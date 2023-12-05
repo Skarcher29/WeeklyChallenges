@@ -39,12 +39,12 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
-            return (numbers == null || numbers.Count() == 0) ? 0 : numbers.Sum();
+            return (numbers == null) ? 0 : numbers.Sum();
         }
 
         public int SumEvens(int[] numbers)
         {
-            if (numbers == null || numbers.Count() == 0)
+            if (numbers == null)
             {
                 return 0;
             }
@@ -63,7 +63,7 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOdd(List<int> numbers)
         {
-            return (numbers == null || numbers.Count() == 0) ? false : (numbers.Sum() % 2 != 0) == true;
+            return (numbers == null) ? false : (numbers.Sum() % 2 != 0) == true;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
